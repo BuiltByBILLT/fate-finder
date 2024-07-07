@@ -18,15 +18,27 @@
 
 .input {
 	padding: 0.5rem;
-	margin: 0.5rem;
+	margin: 0;
+	flex-grow: 1; /* make the input take up the remaining space */
+	border-radius: 5px 0 0 5px; /* add border radius to the left side */
+	border: 1px solid lightblue;
+}
+
+.input:focus {
+	border-color: #66afe9; /* Changes border color on focus */
+	box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Adds a shadow on focus */
 }
 
 .button {
 	padding: 0.5rem 1rem;
-	margin: 0.5rem;
+	margin: 0;
+	height: 100%; /* make the button the same height as the input */
+	border-radius: 0 5px 5px 0; /* add border radius to the right side */
 	background-color: lightblue;
 	color: white;
 	border: none;
-	border-radius: 5px;
 	cursor: pointer;
+}
+.button:hover {
+	background-color: #87ceeb; /* add a hover color */
 }

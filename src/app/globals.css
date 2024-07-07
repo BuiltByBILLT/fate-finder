@@ -1,0 +1,4 @@
+input {
+	all: unset; /* Resets all properties to their initial values */
+	box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
