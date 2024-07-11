@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import styles from "./page.module.css"
+import Buckets from "./components/Buckets"
 
 const HomePage = () => {
 	const [newIdea, setNewIdea] = useState("")
@@ -21,6 +22,7 @@ const HomePage = () => {
 					Add
 				</button>
 			</div>
+			<Buckets />
 		</div>
 	)
 }
